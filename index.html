@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- <link href="css/jquery.mobile-1.4.2.min.css" rel="stylesheet" type="text/css">  -->
+
+<link rel="stylesheet" href="css/themes/TESTING.min.css" />
+<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.2.min.css" />
+
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/jquery.mobile-1.4.2.min.js"></script>
+
+</head>
+<body>
+<!-------------------------------------- PANEL LUAR ------------------------------------------------>
+<script>
+	$(function() {
+		$('#mypanel').panel().enhanceWithin();
+	});
+</script>
+
+<div data-role="panel" id="mypanel" data-theme="b">
+	<h3>Menu</h3>
+	<ul data-role="listview" data-inset="true">
+		<li><a href= "#pg1">Muka 1</a></li>
+		<li><a href= "#pg2">Muka 2</a></li>
+		<li><a href= "#pg3">Muka 3</a></li>
+	</ul>
+</div>
+
+
+<!-------------------------------------- PAGE1 ------------------------------------------------>
+
+<div data-role="page" id="pg1">
+
+	<div data-role="header" data-position="fixed">
+		<a href="#mypanel" data-rel="panel" data-icons="bars">Menu</a>
+		
+		<h1>SELAMAT DATANG KE DUNIA BARU DORAEMON</h1>
+
+	</div><!-- /header -->
+
+	<div data-role="content">
+		
+		<h3>DORAEMON</h3>
+		<img src="images/doraemon.jpg" style= "display : block; margin : 0 auto;" />
+		<p style = "text-align : justify;">Doraemon (ドラえもん Doraemon?) is a Japanese manga series created by Fujiko Fujio, which later became an anime series and an Asian franchise. The series is about a robotic cat named Doraemon, who travels back in time from the 22nd century to aid a pre-teen boy called Nobita Nobi (野比 のび太 Nobi Nobita?).The series first appeared in December 1969, when it was published simultaneously in six different magazines. A total of 1,344 stories were created in the original series, which are published by Shogakukan under the Tentōmushi (てんとう虫?) manga brand, extending to forty-five volumes. The volumes are collected in the Takaoka Central Library in Toyama, Japan, where Fujiko Fujio was born. Turner Broadcasting System bought the rights to the Doraemon anime series in the mid-1980s for a US English-language release,[1] but canceled it without explanation before broadcasting any episodes. In July 2013 it was announced that the manga would be released digitally in English via the Amazon Kindle e-book service.[2]Most of Doraemon episodes are comedies with lessons regarding values such as honesty, perseverance, courage, and respect. Various environmental issues are often visited, including homeless animals, global warming, endangered species, deforestation, and pollution. Miscellaneous educational topics such as dinosaurs, the flat Earth theory, wormhole traveling, Gulliver's Travels, and the history of Japan are often covered.Awards for "Doraemon" include the Japan Cartoonists Association Award for excellence in 1973, the first Shogakukan Manga Award for children's manga in 1982,[3] and the first Osamu Tezuka Culture Award in 1997. In March 2008 Japan's Foreign Ministry appointed Doraemon as the nation's first "anime ambassador."[4] Ministry spokesman explained the novel decision as an attempt to help people in other countries understand Japanese anime better and to deepen their interest in Japanese culture."[5] The Foreign Ministry action confirms that Doraemon has come to be considered a Japanese cultural icon. In 2002 the anime character was acclaimed as an "Asian Hero" in a special feature survey conducted by Time Asia magazine.[6]</p>
+		<p><a href="#pg2" class="ui-btn" data-transition="slideup"> Page 1 </a></p>
+		<p><a href="#pg3" class="ui-btn"> Page 2 </a></p>
+	</div><!-- /content -->
+
+	<!-- /footer page 1 -->
+	<div data-role="footer" data-position="fixed">
+			
+			<div data-role="navbar">
+				<ul>
+				<li><a data-icon="home" data-transition="flip" href="#" class="ui-btn-active ui-state-persist">One</a></li>
+				<li><a data-icon="star" data-transition="flip" href="#pg2">Two</a></li>
+				<li><a data-icon="alert" data-transition="flip" href="#pg3">Three</a></li>
+				</ul>
+			</div><!-- /navbar -->
+			
+	</div>
+	<!-- /footer page 1-->
+	
+</div><!-- /page -->
+
+<!-------------------------------------- PAGE2 ------------------------------------------------>
+
+<div data-role="page" id="pg2" data-theme="b">
+
+<!-------------------- HEADER PAGE 2 ------------------------>
+			<div data-role="header" data-position="fixed">
+				<a href="#mypanel" data-rel="panel" data-icons="bars">Menu</a>
+				<a href="#" data-rel="back" class="ui-btn-right" data-icons="carat-1">Back</a>
+				<h1>Page Title 2</h1>
+		
+			</div><!-- /header -->
+<!-------------------- HEADER PAGE 2 ------------------------>
+
+<!-------------------- INTRO PAGE 2 ------------------------>
+			<div data-role="content">
+				<h3>KAWAN-KAWAN DORAEMON</h3>
+				<p>Fujiko's friends say that every main character represents elementary school student archetypes Fujiko noticed in his own school days. Doraemon and Nobita appear in every episode of the anime.
+				</p>
+				<img src="images/doraemon2.jpg" />
+			</div>
+<!-------------------- INTRO PAGE 2 ------------------------>	
+
+			<div role="main" class="ui-content">
+			
+<!-------------------- SET OF COLLAPSIBLE ------------------------>
+			<div data-role="collapsibleset">
+				
+<!-------------------- COLLAPSIBLE 1 ------------------------>
+						<div data-role="collapsible" data-collapsed="false">
+							<h4>NOBITA</h4>
+							<img src="images/nobita.jpg" width="20%" style="display:block; margin: 0 auto;"
+							<p>
+							Nobita (born on 7 August, Leo), is the other main character of most stories. He is a fourth grader (fifth grader in anime version) and is 10 years old[10] in Tokyo's Nerima Ward and an only child. He wears glasses, a red or yellow polo shirt with a white collar, and blue or black shorts. Nobita is dumb, uncoordinated, dim-witted, weak, frail, childish, unlucky and bad at sports. Nobita's typical day consists of arriving late to school, scoring zero in his tests, getting scolded from his teacher, being teased by his classmates Gian and Suneo, falling in the curbside rain gutters, dogs running after him as he step his foot by mistake on the dog's tail, getting scoldings by his mom as she receives complaints against Nobita for not completing his home-work, coming late to school or either his poor performance in his studies and sports, falls asleep during class,and does not have a good image between his friends except Shizuka, who remembers Nobita's kind heart and worries about him. Some notable personality traits in Nobita are his cowardice (where he is scared of almost everything, especially ghosts) and his cry-baby (a running gag in the show has Nobita crying, mostly at the beginning of the episode) attitude.
+							Nobita is usually portrayed as being courageous and he has often risked his life to help save others or even entire civilizations in full-length stories. Nobita can be very serious and responsible at times. In the original history which Doraemon doesn't interfere, Nobita would marry Jaiko (as long as he only wants to marry Shizuka), never find a good job and eventually go bankrupt. Despite everything, Doraemon succeeds on his mission, as seen in several episodes in which they travel to the future, Nobita eventually marries Shizuka and becomes an officer of Ministry of the Environment.
+							</p>
+						</div>
+<!-------------------- COLLAPSIBLE 1 ------------------------>						
+<!-------------------- COLLAPSIBLE 2 ------------------------>
+						<div data-role="collapsible">
+							<h4>SIZUKA</h4>
+							<img src="images/sizuka.jpg" width="20%" style="display:block; margin: 0 auto;"
+							<p>
+							Shizuka (born on 8 May, Taurus), usually called Shizuka-chan (静香ちゃん?), is a smart, kind and pretty girl and Nobita's best friend. She takes baths several times a day. Nobita often disrupts her in her bath due to some misuse of Doraemon's gadgets, and Shizuka usually shouts out "Go away, pervert!" to Nobita. Her true passions are sweet potatoes, which she'd rather keep to herself out of the knowledge of others, and the violin, in which her playing is as atrocious as Gian's singing. She is also known for taking piano lessons unwillingly (as she loves violin more), which is sometimes a reason for declining to hang out with friends. Due to Doraemon's intervention, Shizuka will marry Nobita. At present, she doesn't have any crush on her close friends, but she fancies some handsome idols on TV.
+							</P>	
+						</div>
+<!-------------------- COLLAPSIBLE 2 ------------------------>						
+<!-------------------- COLLAPSIBLE 3 ------------------------>		
+						<div data-role="collapsible">
+							<h4>GIANT</h4>
+							<img src="images/giant.png" width="20%" style="display:block; margin: 0 auto;"
+							<p>
+							Takeshi (born on 15 June, Gemini), usually known by the nickname "Gian" (ジャイアン Jaian?) (known as "Big G." in the English version of the manga, and "Damulag" in the Tagalog version) from English word "Giant", is the big, strong, and quick-tempered local bully. He also frequently steals other children's toys (especially Suneo) and books under the pretext of "borrowing" them, unless the toy is damaged. This is how most fans considered Gian to be the antagonist of this show. However, he does not hesitate to help Nobita and his friends when they are in real trouble, which often occurs in full-length stories.
+							He is known for his boastful confidence in his horrible singing voice, though he considers himself a great singer. But in some episodes when his voice is recorded and he hears it, he instantly denies it being his voice and threatens to beat up the person who sung his songs in a very bad way. Several of the stories revolve around Nobita and his friends' efforts to avoid Gian's concerts. Gian is also confident in cooking, but just like his singing, his hand-made food can be a nightmare for other people very easily.
+							</p>	
+						</div>
+<!-------------------- COLLAPSIBLE 2 ------------------------>						
+			</div>
+<!-------------------- SET OF COLLAPSIBLE ------------------------>		
+</div>
+	
+	<!-- /footer page 2-->
+			<div data-role="footer" data-position="fixed">
+			<!-- /navbar -->
+					<div data-role="navbar">
+						<ul>
+						<li><a data-icon="home" data-transition="flip" href="#pg1">One</a></li>
+						<li><a data-icon="star" data-transition="flip" href="#pg2" class="ui-btn-active ui-state-persist">Two</a></li>
+						<li><a data-icon="alert" data-transition="flip" href="#pg3">Three</a></li>
+						</ul>
+					</div>
+			</div>
+	<!-- /footer page 2-->
+	
+	
+</div><!-- /page -->
+
+<!-------------------------------------- PAGE3 ------------------------------------------------>
+
+<div data-role="page" id="pg3" data-theme="c">
+
+	<div data-role="header" data-add-back-btn="true" data-position="fixed">
+	<a href="#mypanel" data-rel="panel" data-icons="bars">Menu</a>
+		<h1>Page Title 3</h1>
+	</div><!-- /header -->
+
+	<!-- /list -->
+		<div data-role="content">
+			<h3>SENARAI AKSI-AKSI DORAEMON DORAEMON</h3>
+			<ul data-role= "listview" data-inset="true">
+			
+				<li> 
+				<a href="#popup1" data-rel="popup">
+				<img src="images/icon1.jpg" width="100">
+				<h3>DORAMEON 1</h3>
+				<p>Kawan kepada Nobita</p>
+				</a>
+				</li>
+				
+				<li> 
+				<a href="#popup2" data-rel="popup">
+				<img src="images/icon2.jpg" width="100"> 
+				<h3>DORAMEON 2</h3>
+				<p>Kawan kepada Sizuka</p>
+				</a>
+				</li>
+				
+				<li> 
+				<a href="#popup3" data-rel="popup">
+				<img src="images/icon3.jpg" width="100"> 
+				<h3>DORAMEON 3</h3>
+				<p>Kawan kepada Giant</p>
+				</a>
+				</li>
+				
+			<p><a href="#pg1" class="ui-btn"> Utama </a></p>
+		</div><!-- /content -->
+
+	<!-- /Popup 1 -->
+	<div data-role="popup" id="popup1" style="max-width:800px;"> 
+	
+		<ul data-role="listview">
+			<li><a href="tel:+601112218566" class="ui-btn ui-btn-icon-left ui-icon-phone">Call</a></li>
+			<li><a href="sms://01112218566" class="ui-btn ui-btn-icon-left ui-icon-edit">SMS</a></li>
+			<li><a href="mailto:khairul_akmal@navy.mil.my" class="ui-btn ui-btn-icon-left ui-icon-mail">Email</a></li>
+		</u> 
+			
+	</div>
+	
+	<!-- /Popup 2 -->
+		<div data-role="popup" id="popup2" style="max-width:800px;"> 
+	
+		<ul data-role="listview">
+			<li><a href="tel:+601112218566" class="ui-btn ui-btn-icon-left ui-icon-phone">Call</a></li>
+			<li><a href="sms://01112218566" class="ui-btn ui-btn-icon-left ui-icon-edit">SMS</a></li>
+			<li><a href="mailto:khairul_akmal@navy.mil.my" class="ui-btn ui-btn-icon-left ui-icon-mail">Email</a></li>
+		</u> 
+			
+	</div>
+	
+	<!-- /Popup 3 -->
+		<div data-role="popup" id="popup3" style="max-width:800px;"> 
+	
+		<ul data-role="listview">
+			<li><a href="tel:+601112218566" class="ui-btn ui-btn-icon-left ui-icon-phone">Call</a></li>
+			<li><a href="sms://01112218566" class="ui-btn ui-btn-icon-left ui-icon-edit">SMS</a></li>
+			<li><a href="mailto:khairul_akmal@navy.mil.my" class="ui-btn ui-btn-icon-left ui-icon-mail">Email</a></li>
+		</u> 
+			
+	</div>
+	
+	<!-- /footer page 3-->
+	<div data-role="footer" data-position="fixed">
+	
+			<div data-role="navbar">
+				<ul>
+				<li><a data-icon="home" data-transition="flip" href="#pg1">One</a></li>
+				<li><a data-icon="star" data-transition="flip" href="#pg2">Two</a></li>
+				<li><a data-icon="alert" data-transition="flip" href="#pg3" class="ui-btn-active ui-state-persist">Three</a></li>
+				</ul>
+			</div><!-- /navbar -->
+			
+	</div>
+	<!-- /footer page 3 -->
+	
+</div><!-- /page -->
+
+
+</body>
+
+</html>
